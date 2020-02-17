@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RepoDetailActivity"
+    android:background="#EC610A">
+
+    <RelativeLayout
+        android:id="@+id/tabbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF">
+
+        <ImageButton
+            android:id="@+id/backbutton_imagebutton"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_button"/>
+        <TextView
+            android:id="@+id/reponame_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Repo Name"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backbutton_imagebutton"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#EC610A"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/start_imagebutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/star_unselected"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_owner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/tabbar_layout">
+
+        <ImageView
+            android:id="@+id/repo_image_imageview"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/repoowner_textview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/repo_image_imageview"
+            android:layout_marginTop="10dp"
+            android:text="Owner"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_owner_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/starts_textview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Stars:"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/openissues_textview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Open Issues:"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/starts_textview"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+</RelativeLayout>

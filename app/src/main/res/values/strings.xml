@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IngBank Interview Sample</string>
+    <string name="username_edittext_hint"><font size="11">Please enter the username you want to search...</font></string>
+</resources>

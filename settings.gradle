@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='IngBank_ Interview_Android_Project'
